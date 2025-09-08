@@ -13,8 +13,8 @@
 - [x] **Field details page**: Show field information, photos, reviews, pricing, and availability grid
 - [x] **Booking system**: Implement real-time booking with time slot selection and conflict prevention
 - [x] **Payment integration**: Support cash, bank transfer proof upload, and optional Stripe payments ✅ *COMPLETED*
-- [ ] **Favorites management**: Allow users to save and manage favorite fields
-- [ ] **Booking history**: Display user's past and upcoming bookings with status tracking
+- [x] **Favorites management**: Allow users to save and manage favorite fields ✅ *COMPLETED*
+- [x] **Booking history**: Display user's past and upcoming bookings with status tracking ✅ *COMPLETED*
 - [ ] **Weather integration**: Show weather forecast for booked time slots using OpenWeatherMap API
 - [ ] **Email notifications**: Set up Resend for booking confirmations, reminders, and status updates
 
@@ -49,6 +49,23 @@
 - [ ] **Final testing**: Complete end-to-end testing in production environment
 
 ## Recently Completed
+- [x] **Booking History Implementation**:
+  - Created comprehensive /bookings page with detailed booking listing
+  - Implemented status tracking with visual indicators (pending, confirmed, cancelled, etc.)
+  - Added filtering by status, time (upcoming/past), and search functionality
+  - Included pagination for large booking lists
+  - Added quick actions: view details, cancel bookings for valid statuses
+  - Real-time booking cancellation with confirmation prompts
+  - Empty state handling with appropriate call-to-actions
+
+- [x] **Favorites Management Implementation**:
+  - Created comprehensive /favorites page with grid layout for favorite fields
+  - Implemented remove from favorites functionality with loading states
+  - Added empty state with call-to-action to browse fields
+  - Integrated with existing API routes and User model favorites field
+  - Added quick actions to view field details and book directly from favorites
+  - Heart button toggle functionality already working on field detail pages
+
 - [x] **Booking System Implementation**:
   - Fixed schema mismatch between API routes and Booking model
   - Added Calendar component for date selection
